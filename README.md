@@ -43,25 +43,25 @@ http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
 
 ## 各種設定
 ### Python 3.7インストール
-sudo yum update
-sudo yum install git -y
-git clone https://github.com/yyuu/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
-echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
-source ~/.bash_profile
-sudo yum install gcc zlib-devel bzip2 bzip2-devel readline readline-devel sqlite sqlite-devel openssl openssl-devel -y
-sudo yum install libffi-devel -y     (*python 3.7系に必要)
-pyenv install 3.7.3
-pyenv global 3.7.3
-pyenv rehash
-pip install edgegrid-python
-pip install prometheus_client
-pip install pyyaml
+    sudo yum update
+    sudo yum install git -y
+    git clone https://github.com/yyuu/pyenv.git ~/.pyenv
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bash_profile
+    echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bash_profile
+    echo 'eval "$(pyenv init -)"' >> ~/.bash_profile
+    source ~/.bash_profile
+    sudo yum install gcc zlib-devel bzip2 bzip2-devel readline readline-devel sqlite sqlite-devel openssl openssl-devel -y
+    sudo yum install libffi-devel -y     (*python 3.7系に必要)
+    pyenv install 3.7.3
+    pyenv global 3.7.3
+    pyenv rehash
+    pip install edgegrid-python
+    pip install prometheus_client
+    pip install pyyaml
 
 ### Prometheusインストール
-sudo wget https://github.com/prometheus/prometheus/releases/download/v2.10.0/prometheus-2.10.0.linux-amd64.tar.gz
-sudo tar -zxf prometheus-2.10.0.linux-amd64.tar.gz
+    sudo wget https://github.com/prometheus/prometheus/releases/download/v2.10.0/prometheus-2.10.0.linux-amd64.tar.gz
+    sudo tar -zxf prometheus-2.10.0.linux-amd64.tar.gz
 
 ### Grafanaインストール
-sudo yum install https://dl.grafana.com/oss/release/grafana-6.2.2-1.x86_64.rpm 
+    sudo yum install https://dl.grafana.com/oss/release/grafana-6.2.2-1.x86_64.rpm 
