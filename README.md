@@ -2,11 +2,14 @@
 Akamai Tech Day 2019のLightning Talkセッションで紹介した、Akamai Reporting APIを使った「ダッシュボードツールによるトラフィックデータの可視化」のためのサンプルPythonスクリプトです。
 
 ## 使い方
-    python client.py data-1.yml 8010
+    python client.py <設定ファイル> <ポート番号>
 
 ### 引数
-- data-1.yml: EdgeRCのパス、EdgeRCで使用する認証情報(Credential)のセクション名、対象CPコードをYAML記法で記載した設定ファイル
-- 8010: クライアントを起動するポート
+- 設定ファイル: EdgeRCのパス、EdgeRCで使用する認証情報(Credential)のセクション名、対象CPコードをYAML記法で記載した設定ファイル
+- ポート番号: クライアントを起動するポート
+
+### 使用例
+    python client.py data-1.yml 8010
 
 ## Tech Day実行環境の構築手順
 
