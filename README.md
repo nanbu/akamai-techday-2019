@@ -2,7 +2,7 @@
 Akamai Tech Day 2019のLightning Talkセッションで紹介した、Akamai Reporting APIを使った「ダッシュボードツールによるトラフィックデータの可視化」のためのサンプルPythonスクリプトです。
 
 ## 使い方
-python client.py data-1.yml 8010
+    python client.py data-1.yml 8010
 (事前にdata-1.ymlの設定内容を書き換えておくこと)
 
 
