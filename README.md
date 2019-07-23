@@ -3,8 +3,10 @@ Akamai Tech Day 2019のLightning Talkセッションで紹介した、Akamai Rep
 
 ## 使い方
     python client.py data-1.yml 8010
-(事前にdata-1.ymlの設定内容を書き換えておくこと)
 
+### 引数
+- data-1.yml: EdgeRCのパス、EdgeRCで使用する認証情報(Credential)のセクション名、対象CPコードを記載
+- 8010: クライアントを起動するポート
 
 ## Tech Day実行環境の構築手順
 
