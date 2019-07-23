@@ -75,7 +75,7 @@ Linuxサーバーを用意
 
 ## 各種設定
 ### Prometheus設定
-- prometheus.ymlを編集し、「scrape_configs:」以下にPrometheusクライアントの名前とポート名を追加
+- prometheus.ymlを編集し、「scrape_configs:」以下にPrometheusクライアントの名前（任意の識別子）とポート名を追加
 
       - job_name: cpcode1
         static_configs:
