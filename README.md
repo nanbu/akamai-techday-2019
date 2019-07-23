@@ -11,6 +11,12 @@ Akamai Tech Day 2019のLightning Talkセッションで紹介した、Akamai Rep
 ### 使用例
     python client.py data-1.yml 8010
 
+### 必要なもの
+- Akamai Reporting API実行のための認証情報 (.edgerc)→Akamai Control Centerで生成・取得し、任意パスにテキストファイルとして設置
+- Prometheus Client (Python用) pipでインストール可能
+- Akamai EdgeGrid (Python用) pipでインストール可能
+- YAMLライブラリ (Python用) pipでインストール可能
+
 ## Tech Day実行環境の構築手順
 
 Linuxサーバーを用意
