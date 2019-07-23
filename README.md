@@ -53,7 +53,7 @@ Linuxサーバーを用意
   http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
 
 
-## 各種設定
+## 各種インストール
 ### Python 3.7インストール
     sudo yum update
     sudo yum install git -y
