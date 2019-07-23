@@ -55,6 +55,7 @@ http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
     pyenv install 3.7.3
     pyenv global 3.7.3
     pyenv rehash
+### Pythonライブラリ各種インストール
     pip install edgegrid-python
     pip install prometheus_client
     pip install pyyaml
