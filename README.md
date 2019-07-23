@@ -11,34 +11,35 @@ python client.py data-1.yml 8010
 Linuxサーバーを用意
 
 ### インストールするもの
-python3.7.3 (この記事作成時点での最新)
-prometheus 2.10.0 / 2019-05-25
-grafana 6.2.2
-Akamai EdgeGrid
-Prometheus client
+- python3.7.3 (この記事作成時点での最新)
+- prometheus 2.10.0 / 2019-05-25
+- grafana 6.2.2
+- Akamai EdgeGrid
+- Prometheus client
 
-pyenv / python3のインストールはこちらを参照
-https://qiita.com/tisk_jdb/items/01bd6ef9209acc3a275f
+### 参考にした記事
+- pyenv / python3のインストールはこちらを参照
+  https://qiita.com/tisk_jdb/items/01bd6ef9209acc3a275f
 
-python3.7系のインストールについてはこちらも参照
-https://qiita.com/hitochan777/items/941d4422c53978b275f8
+- python3.7系のインストールについてはこちらも参照
+  https://qiita.com/hitochan777/items/941d4422c53978b275f8
 
-Akamai EdgeGridのインストール方法
-https://github.com/akamai/AkamaiOPEN-edgegrid-python
+- Akamai EdgeGridのインストール方法
+  https://github.com/akamai/AkamaiOPEN-edgegrid-python
 
-Prometheusのインストールはここを参考にした
-https://qiita.com/holy_road_ss/items/eb0030fd17a2030eb5f0
+- Prometheusのインストールはここを参考にした
+  https://qiita.com/holy_road_ss/items/eb0030fd17a2030eb5f0
 
-Prometheus client (python)
-https://github.com/prometheus/client_python
+- Prometheus client (python)
+  https://github.com/prometheus/client_python
 
-Grafanaのインストールはこれらを参考にした
-https://grafana.com/docs/installation/rpm/#install-via-yum-repository
-https://grafana.com/grafana/download
-http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
+- Grafanaのインストールはこれらを参考にした
+  https://grafana.com/docs/installation/rpm/#install-via-yum-repository
+  https://grafana.com/grafana/download
+  http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
 
-Grafana初期設定
-http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
+- Grafana初期設定
+  http://blog.serverworks.co.jp/tech/2016/03/11/play-with-grafana-1/
 
 
 ## 各種設定
