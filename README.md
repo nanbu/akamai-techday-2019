@@ -72,3 +72,23 @@ Linuxサーバーを用意
 
 ### Grafanaインストール
     sudo yum install https://dl.grafana.com/oss/release/grafana-6.2.2-1.x86_64.rpm 
+
+## 各種設定
+### Prometheus設定
+- prometheus.ymlを編集し、「scrape_configs:」以下にPrometheusクライアントの名前とポート名を追加
+
+      - job_name: cpcode1
+        static_configs:
+        - targets:
+          - localhost:8010
+      - job_name: cpcode2
+        static_configs:
+        - targets:
+          - localhost:8020
+      - job_name: cpcode3
+        static_configs:
+        - targets:
+          - localhost:8030
+
+### Grafana設定
+- Prometheusをデータソースとしてクエリを書き、ダッシュボードを作成
