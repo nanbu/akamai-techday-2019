@@ -61,7 +61,6 @@ def update_traffic_data(config):
     if result.status_code == 200:
         data = result.json()
         record = data["data"][-1]
-        reported_startdatetime = record["startdatetime"]
         edge_volume = record["edgeBitsPerSecond"]
         if edge_volume != "N/A":
             EDGEBYTES.set(edge_volume)
@@ -70,7 +69,6 @@ def update_traffic_data(config):
             ORIGINHITS.set(record["originHitsPerSecond"])
             BYTESOFFLOAD.set(record["bytesOffload"])
             HITSOFFLOAD.set(record["hitsOffload"])
-    return most_recent_startdatetime
 
 def get_config_account_from_yaml_file(yaml_file):
     with open(yaml_file, 'r') as yml:
@@ -82,10 +80,11 @@ if __name__ == '__main__':
     port = int(sys.argv[2])
     
     config = get_config_account_from_yaml_file(config_file)
+
     start_http_server(port)
     
     while True:
-        last_startdatetime = update_traffic_data(config)
+        update_traffic_data(config)
         time.sleep(60)
 
 
